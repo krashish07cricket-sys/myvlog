@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Primary SEO Meta Tags -->
+  <title>MyVlog — Cinematic Travel, Adventure & Visual Storytelling</title>
+  <meta name="title" content="MyVlog — Cinematic Travel, Adventure & Visual Storytelling">
+  <meta name="description" content="Explore cinematic travel vlogs, destination guides, photography, and behind-the-scenes stories from around the globe on MyVlog.">
+  <meta name="keywords" content="travel vlog, adventure vlogger, cinematic video, travel blog, photography gallery, visual storytelling, MyVlog">
+  <meta name="author" content="Alex Rivera — MyVlog">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical URL Placeholder (Replace with your live domain) -->
+  <link rel="canonical" href="https://example.com/">
+
+  <!-- Open Graph / Facebook / Social Sharing Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/">
+  <meta property="og:title" content="MyVlog — Life Is an Adventure. Let's Explore It.">
+  <meta property="og:description" content="Watch cinematic travel vlogs, read field dispatches, and explore high-altitude photography from over 35 countries.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://example.com/">
+  <meta name="twitter:title" content="MyVlog — Life Is an Adventure. Let's Explore It.">
+  <meta name="twitter:description" content="Watch cinematic travel vlogs, read field dispatches, and explore photography from around the world.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Embedded SVG Favicon (Replace with assets/icons/favicon.ico if desired) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23ff5e3a'/%3E%3Cpolygon points='24,18 24,46 46,32' fill='%23ffffff'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts: Syne (Display) & Plus Jakarta Sans (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Accurate JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "MyVlog",
+    "url": "https://example.com/",
+    "description": "Cinematic travel vlogs, adventure photography, and field stories.",
+    "publisher": {
+      "@type": "Person",
+      "name": "Alex Rivera"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Skip Navigation Link for Keyboard Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- =====================================================================
+       A. NAVIGATION BAR
+       ===================================================================== -->
+  <header class="site-header" id="site-header">
+    <nav class="navbar container" aria-label="Primary Navigation">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="MyVlog Home">
+        <span class="logo-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z"/>
+          </svg>
+        </span>
+        <span class="logo-text">My<span class="accent-text">Vlog</span></span>
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#videos" class="nav-link">Videos</a></li>
+        <li><a href="#travel" class="nav-link">Travel</a></li>
+        <li><a href="#blogs" class="nav-link">Blogs</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#about" class="nav-link">About Me</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li class="mobile-only-cta">
+          <a href="#newsletter" class="btn btn-primary btn-sm">Subscribe</a>
+        </li>
+      </ul>
+
+      <!-- Right Action Controls -->
+      <div class="nav-actions">
+        <!-- Dark / Light Mode Toggle -->
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to light mode" title="Toggle color theme">
+          <!-- Sun Icon -->
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon -->
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Prominent Subscribe CTA -->
+        <a href="#newsletter" class="btn btn-primary btn-sm desktop-only-cta">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"/>
+          </svg>
+          <span>Subscribe</span>
+        </a>
+
+        <!-- Mobile Hamburger Menu Toggle -->
+        <button type="button" class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- =====================================================================
+         B. HERO SECTION
+         ===================================================================== -->
+    <section class="hero-section" id="home" aria-label="Introduction">
+      <div class="hero-bg">
+        <!-- High-resolution cinematic background image -->
+        <img
+          src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1920&q=85"
+          alt="Cinematic road winding through dramatic canyon mountains at golden hour"
+          class="hero-bg-image"
+          fetchpriority="high"
+        >
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-badge reveal-up">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          <span>New Episode: 48 Hours Across the Icelandic Highlands</span>
+        </div>
+
+        <h1 class="hero-title reveal-up">
+          Life Is an Adventure.<br>
+          <span class="gradient-text">Let's Explore It.</span>
+        </h1>
+
+        <p class="hero-subtitle reveal-up">
+          Hi, I'm <strong>Alex Rivera</strong> — an independent filmmaker, travel documentarian, and visual storyteller capturing raw human moments, remote landscapes, and off-grid cultures across the planet.
+        </p>
+
+        <div class="hero-cta-group reveal-up">
+          <button type="button" class="btn btn-primary btn-lg" id="hero-watch-latest-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+            <span>Watch Latest Vlog</span>
+          </button>
+          <a href="#travel" class="btn btn-glass btn-lg">
+            <span>Explore Stories</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Quick Hero Highlights -->
+        <div class="hero-quick-meta reveal-up">
+          <div class="meta-pill">
+            <span class="meta-label">Filmed in</span>
+            <strong>4K HDR ProRes</strong>
+          </div>
+          <div class="meta-divider" aria-hidden="true"></div>
+          <div class="meta-pill">
+            <span class="meta-label">Current Base</span>
+            <strong>Kyoto, Japan</strong>
+          </div>
+          <div class="meta-divider" aria-hidden="true"></div>
+          <div class="meta-pill">
+            <span class="meta-label">Next Expedition</span>
+            <strong>Patagonia</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <a href="#videos" class="scroll-down-indicator" aria-label="Scroll down to featured vlogs">
+        <span class="scroll-text">Scroll</span>
+        <span class="scroll-mouse" aria-hidden="true">
+          <span class="scroll-wheel"></span>
+        </span>
+      </a>
+    </section>
+
+    <!-- =====================================================================
+         C & D. FEATURED VLOGS + VIDEO SEARCH AND FILTERS
+         ===================================================================== -->
+    <section class="section vlogs-section" id="videos" aria-labelledby="vlogs-heading">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="section-header-left">
+            <span class="section-eyebrow">Featured Episodes (Sample Library)</span>
+            <h2 class="section-title" id="vlogs-heading">Watch the Latest Vlogs</h2>
+            <p class="section-desc">
+              Stream sample episodes directly in the built-in cinema player. Filter by category, search by keyword, or sort by popularity.
+            </p>
+          </div>
+        </div>
+
+        <!-- Search, Category Filter & Sort Toolbar -->
+        <div class="vlog-controls reveal-up" role="region" aria-label="Video search and filters">
+          <!-- Search Bar -->
+          <div class="search-box">
+            <label for="vlog-search-input" class="sr-only">Search videos by title or description</label>
+            <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input
+              type="search"
+              id="vlog-search-input"
+              class="search-input"
+              placeholder="Search vlogs by title, location, or keyword..."
+              autocomplete="off"
+            >
+            <button type="button" id="clear-search-btn" class="clear-search-btn" aria-label="Clear search query" hidden>
+              &times;
+            </button>
+          </div>
+
+          <!-- Sort Dropdown -->
+          <div class="sort-box">
+            <label for="vlog-sort-select" class="sort-label">Sort by:</label>
+            <select id="vlog-sort-select" class="sort-select">
+              <option value="newest">Newest First</option>
+              <option value="popular">Most Popular</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Category Filter Pills -->
+        <div class="category-pills reveal-up" id="vlog-category-pills" role="tablist" aria-label="Filter vlogs by category">
+          <button type="button" class="category-pill active" data-category="All" role="tab" aria-selected="true">All Vlogs</button>
+          <button type="button" class="category-pill" data-category="Travel" role="tab" aria-selected="false">Travel</button>
+          <button type="button" class="category-pill" data-category="Adventure" role="tab" aria-selected="false">Adventure</button>
+          <button type="button" class="category-pill" data-category="Food" role="tab" aria-selected="false">Food</button>
+          <button type="button" class="category-pill" data-category="Lifestyle" role="tab" aria-selected="false">Lifestyle</button>
+          <button type="button" class="category-pill" data-category="Daily Vlogs" role="tab" aria-selected="false">Daily Vlogs</button>
+        </div>
+
+        <!-- Results Status Bar -->
+        <div class="results-meta" id="vlog-results-meta" aria-live="polite">
+          Showing <strong id="vlog-showing-count">0</strong> of <strong id="vlog-total-count">0</strong> sample episodes
+        </div>
+
+        <!-- Dynamic Video Grid -->
+        <div class="vlog-grid" id="vlog-grid">
+          <!-- Populated dynamically via script.js -->
+        </div>
+
+        <!-- Empty State (Shown when search/filter finds no matches) -->
+        <div class="empty-state" id="vlog-empty-state" hidden>
+          <div class="empty-state-icon" aria-hidden="true">🎬</div>
+          <h3>No matching vlogs found</h3>
+          <p>We couldn't find any episodes matching your search or category filter. Try another keyword or reset your filters.</p>
+          <button type="button" class="btn btn-outline" id="reset-filters-btn">Reset All Filters</button>
+        </div>
+
+        <!-- Load More Pagination Button -->
+        <div class="load-more-wrapper" id="load-more-wrapper">
+          <button type="button" class="btn btn-outline btn-lg" id="load-more-vlogs-btn">
+            <span>Load More Episodes</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         I. STATISTICS SECTION (DEMO VALUES)
+         ===================================================================== -->
+    <section class="stats-section" aria-label="Creator Milestones">
+      <div class="container">
+        <div class="stats-banner reveal-up">
+          <div class="stats-disclaimer">
+            <span class="badge-demo">Sample Creator Metrics (Editable Demo Values)</span>
+          </div>
+          <div class="stats-grid" id="stats-grid">
+            <div class="stat-card">
+              <div class="stat-value">
+                <span class="stat-number" data-target="185">0</span><span class="stat-suffix">+</span>
+              </div>
+              <div class="stat-label">Total Videos Filmed</div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-value">
+                <span class="stat-number" data-target="38">0</span>
+              </div>
+              <div class="stat-label">Countries Explored</div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-value">
+                <span class="stat-number" data-target="24">0</span><span class="stat-suffix">M+</span>
+              </div>
+              <div class="stat-label">Total Demo Views</div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-value">
+                <span class="stat-number" data-target="450">0</span><span class="stat-suffix">K</span>
+              </div>
+              <div class="stat-label">Community Subscribers</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         F. TRAVEL AND ADVENTURE SECTION
+         ===================================================================== -->
+    <section class="section travel-section" id="travel" aria-labelledby="travel-heading">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="section-header-left">
+            <span class="section-eyebrow">Field Dispatches & Expeditions</span>
+            <h2 class="section-title" id="travel-heading">Travel &amp; Adventure Guides</h2>
+            <p class="section-desc">
+              Explore iconic regions, off-grid routes, and practical field notes from our most unforgettable expeditions.
+            </p>
+          </div>
+        </div>
+
+        <!-- Dynamic Travel Destinations Grid -->
+        <div class="travel-grid" id="travel-grid">
+          <!-- Populated dynamically via script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         G. LATEST BLOG POSTS
+         ===================================================================== -->
+    <section class="section blogs-section" id="blogs" aria-labelledby="blogs-heading">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="section-header-left">
+            <span class="section-eyebrow">Creator Journal</span>
+            <h2 class="section-title" id="blogs-heading">Latest Stories &amp; Filmmaking Notes</h2>
+            <p class="section-desc">
+              In-depth travel essays, camera gear breakdowns, solo packing checklists, and behind-the-scenes stories.
+            </p>
+          </div>
+        </div>
+
+        <!-- Dynamic Blog Posts Grid -->
+        <div class="blog-grid" id="blog-grid">
+          <!-- Populated dynamically via script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         H. PHOTO GALLERY (WITH LIGHTBOX)
+         ===================================================================== -->
+    <section class="section gallery-section" id="gallery" aria-labelledby="gallery-heading">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="section-header-left">
+            <span class="section-eyebrow">Visual Archive</span>
+            <h2 class="section-title" id="gallery-heading">Stills &amp; Behind the Scenes</h2>
+            <p class="section-desc">
+              Click any frame to open the high-resolution lightbox viewer. Use arrow keys or swipe gestures to navigate.
+            </p>
+          </div>
+        </div>
+
+        <!-- Dynamic Photo Gallery Grid -->
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- Populated dynamically via script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         E. ABOUT THE CREATOR
+         ===================================================================== -->
+    <section class="section about-section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Creator Image Column -->
+          <div class="about-image-wrapper reveal-up">
+            <div class="about-image-frame">
+              <img
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=80"
+                alt="Portrait of Alex Rivera holding a cinema camera outdoors"
+                class="about-image"
+                loading="lazy"
+              >
+              <div class="about-experience-badge">
+                <span class="exp-years">6+</span>
+                <span class="exp-text">Years Documenting<br>Global Stories</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Creator Bio Column -->
+          <div class="about-content reveal-up">
+            <span class="section-eyebrow">Behind the Lens</span>
+            <h2 class="section-title" id="about-heading">Meet Alex Rivera</h2>
+            <p class="about-lead">
+              What started in 2020 with a secondhand mirrorless camera and a one-way train ticket across the Alps has evolved into a global community of curious explorers.
+            </p>
+            <p class="about-text">
+              I started vlogging because traditional travel shows often felt overly scripted and disconnected from reality. My goal with <strong>MyVlog</strong> is to share honest, cinematic stories—celebrating local street food vendors, remote mountain guides, slow rail journeys, and the quiet moments between destinations.
+            </p>
+
+            <!-- Interests & Hobbies Tags -->
+            <div class="about-interests">
+              <h3 class="interests-title">Interests &amp; Obsessions</h3>
+              <div class="interest-tags">
+                <span class="interest-tag">🎥 Anamorphic Filmmaking</span>
+                <span class="interest-tag">🏔️ Alpine Trekking</span>
+                <span class="interest-tag">🍜 Street Food Anthropology</span>
+                <span class="interest-tag">🚆 Overnight Trains</span>
+                <span class="interest-tag">☕ Specialty Coffee</span>
+                <span class="interest-tag">🚁 FPV Drone Cinema</span>
+              </div>
+            </div>
+
+            <!-- Creator Social Links & Action Button -->
+            <div class="about-footer">
+              <button type="button" class="btn btn-primary" id="know-more-btn">
+                <span>Know More About Me &amp; My Gear</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="16" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+              </button>
+
+              <div class="about-socials" aria-label="Creator Social Media">
+                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="YouTube Channel">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                  </svg>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram Profile">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook Page">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                  </svg>
+                </a>
+                <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="X (Twitter) Profile">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         J. YOUTUBE AND SOCIAL MEDIA HUB
+         ===================================================================== -->
+    <section class="section social-hub-section" aria-labelledby="social-hub-heading">
+      <div class="container">
+        <div class="social-hub-card reveal-up">
+          <div class="social-hub-content">
+            <span class="section-eyebrow">Join the Global Community</span>
+            <h2 class="section-title" id="social-hub-heading">Follow the Journey Everywhere</h2>
+            <p class="section-desc">
+              New long-form 4K episodes drop every Sunday on YouTube, with daily behind-the-scenes stories, reels, and live Q&amp;As across social platforms.
+            </p>
+          </div>
+
+          <div class="social-platforms-grid">
+            <!-- YouTube Card -->
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="platform-card platform-youtube">
+              <div class="platform-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+              </div>
+              <div class="platform-info">
+                <strong>YouTube</strong>
+                <span>Weekly 4K Vlogs &amp; Films</span>
+              </div>
+              <span class="platform-cta">Visit Channel &rarr;</span>
+            </a>
+
+            <!-- Instagram Card -->
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="platform-card platform-instagram">
+              <div class="platform-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </div>
+              <div class="platform-info">
+                <strong>Instagram</strong>
+                <span>Daily Stories &amp; Photo Reels</span>
+              </div>
+              <span class="platform-cta">Follow @myvlog &rarr;</span>
+            </a>
+
+            <!-- Facebook Card -->
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="platform-card platform-facebook">
+              <div class="platform-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                </svg>
+              </div>
+              <div class="platform-info">
+                <strong>Facebook</strong>
+                <span>Community Discussions</span>
+              </div>
+              <span class="platform-cta">Join Page &rarr;</span>
+            </a>
+
+            <!-- X / Twitter Card -->
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="platform-card platform-x">
+              <div class="platform-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+              </div>
+              <div class="platform-info">
+                <strong>X (Twitter)</strong>
+                <span>Live Travel Dispatches</span>
+              </div>
+              <span class="platform-cta">Follow Updates &rarr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         K. NEWSLETTER SUBSCRIPTION
+         ===================================================================== -->
+    <section class="section newsletter-section" id="newsletter" aria-labelledby="newsletter-heading">
+      <div class="container">
+        <div class="newsletter-box reveal-up">
+          <div class="newsletter-content">
+            <span class="section-eyebrow">The Sunday Postcard</span>
+            <h2 class="section-title" id="newsletter-heading">Get Field Notes in Your Inbox</h2>
+            <p class="section-desc">
+              Sign up for bi-weekly behind-the-scenes stories, unlisted video links, camera LUTs, and travel itineraries.
+            </p>
+            <p class="demo-form-note">
+              <em>Note: This frontend demo validates your input in the browser. To collect real subscriber emails, connect this form to an email provider like ConvertKit, Mailchimp, or Formspree.</em>
+            </p>
+          </div>
+
+          <form class="newsletter-form" id="newsletter-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="newsletter-name" class="form-label">First Name</label>
+                <input
+                  type="text"
+                  id="newsletter-name"
+                  name="name"
+                  class="form-input"
+                  placeholder="e.g., Maya"
+                  required
+                  minlength="2"
+                >
+                <span class="field-error" id="newsletter-name-error" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="newsletter-email" class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  id="newsletter-email"
+                  name="email"
+                  class="form-input"
+                  placeholder="you@example.com"
+                  required
+                >
+                <span class="field-error" id="newsletter-email-error" role="alert"></span>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              <span>Join the Newsletter</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+
+            <div class="form-status" id="newsletter-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         L. CONTACT SECTION
+         ===================================================================== -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Contact Info Column -->
+          <div class="contact-info reveal-up">
+            <span class="section-eyebrow">Collaborations &amp; Inquiries</span>
+            <h2 class="section-title" id="contact-heading">Let's Create Something Epic</h2>
+            <p class="section-desc">
+              Available for tourism board campaigns, documentary commissions, brand partnerships, speaking engagements, or fellow traveler tips.
+            </p>
+
+            <div class="contact-cards">
+              <div class="contact-info-card">
+                <div class="contact-card-icon" aria-hidden="true">✉️</div>
+                <div>
+                  <h3>Business &amp; Sponsorships</h3>
+                  <p><a href="mailto:hello@example.com">hello@example.com</a> (Placeholder)</p>
+                </div>
+              </div>
+
+              <div class="contact-info-card">
+                <div class="contact-card-icon" aria-hidden="true">📍</div>
+                <div>
+                  <h3>Current Base / Studio</h3>
+                  <p> Lisbon, Portugal &amp; Remote Worldwide</p>
+                </div>
+              </div>
+
+              <div class="contact-info-card">
+                <div class="contact-card-icon" aria-hidden="true">📦</div>
+                <div>
+                  <h3>Press &amp; Media Kit</h3>
+                  <p>Request our latest demographics &amp; rate card via the form or view our <button type="button" class="inline-link-btn" id="contact-gear-link">Creator Profile &amp; Gear</button>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Column -->
+          <div class="contact-form-wrapper reveal-up">
+            <form class="contact-form" id="contact-form" novalidate>
+              <h3 class="form-card-title">Send a Direct Message</h3>
+              <p class="demo-form-note">
+                <em>Client-side validation is active. Connect to Formspree, Netlify Forms, or your own backend endpoint to receive real emails.</em>
+              </p>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">Your Name *</label>
+                  <input
+                    type="text"
+                    id="contact-name"
+                    name="name"
+                    class="form-input"
+                    placeholder="Alex Morgan"
+                    required
+                    minlength="2"
+                  >
+                  <span class="field-error" id="contact-name-error" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Your Email *</label>
+                  <input
+                    type="email"
+                    id="contact-email"
+                    name="email"
+                    class="form-input"
+                    placeholder="alex@company.com"
+                    required
+                  >
+                  <span class="field-error" id="contact-email-error" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject *</label>
+                <input
+                  type="text"
+                  id="contact-subject"
+                  name="subject"
+                  class="form-input"
+                  placeholder="Brand Collaboration / Travel Question"
+                  required
+                  minlength="4"
+                >
+                <span class="field-error" id="contact-subject-error" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message *</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  rows="5"
+                  class="form-input form-textarea"
+                  placeholder="Tell me about your project, timeline, or question..."
+                  required
+                  minlength="15"
+                ></textarea>
+                <span class="field-error" id="contact-message-error" role="alert"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <span>Send Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <div class="form-status" id="contact-status" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================================
+       M. FOOTER
+       ===================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo">
+            <span class="logo-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </span>
+            <span class="logo-text">My<span class="accent-text">Vlog</span></span>
+          </a>
+          <p class="footer-desc">
+            Independent visual storytelling, slow travel documentaries, and field dispatches from the edges of the map. Built for curious minds and adventure seekers.
+          </p>
+          <div class="footer-socials">
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="X">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links-col">
+          <h3 class="footer-col-title">Navigation</h3>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#videos">Featured Vlogs</a></li>
+            <li><a href="#travel">Travel Guides</a></li>
+            <li><a href="#blogs">Creator Blog</a></li>
+            <li><a href="#gallery">Photo Gallery</a></li>
+            <li><a href="#about">About Alex</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Top Categories -->
+        <div class="footer-links-col">
+          <h3 class="footer-col-title">Vlog Categories</h3>
+          <ul class="footer-links">
+            <li><a href="#videos" data-footer-category="Travel">Travel Documentaries</a></li>
+            <li><a href="#videos" data-footer-category="Adventure">High-Altitude Adventure</a></li>
+            <li><a href="#videos" data-footer-category="Food">Street Food Tours</a></li>
+            <li><a href="#videos" data-footer-category="Lifestyle">Digital Nomad Lifestyle</a></li>
+            <li><a href="#videos" data-footer-category="Daily Vlogs">Behind-the-Scenes Daily</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal & Resources -->
+        <div class="footer-links-col">
+          <h3 class="footer-col-title">Legal &amp; Info</h3>
+          <ul class="footer-links">
+            <li><button type="button" class="footer-modal-link" id="open-privacy-btn">Privacy Policy</button></li>
+            <li><button type="button" class="footer-modal-link" id="open-terms-btn">Terms of Use</button></li>
+            <li><button type="button" class="footer-modal-link" id="open-gear-footer-btn">Camera Gear &amp; Specs</button></li>
+            <li><a href="404.html">Sample 404 Page</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> <strong>MyVlog</strong>. All rights reserved. Crafted with clean HTML5, CSS3 &amp; Vanilla JS.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =====================================================================
+       BACK TO TOP BUTTON
+       ===================================================================== -->
+  <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top" title="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- =====================================================================
+       INTERACTIVE MODALS (VIDEO PLAYER, BLOG READER, DESTINATION, BIO, LEGAL, LIGHTBOX)
+       ===================================================================== -->
+
+  <!-- 1. Video Player Modal -->
+  <div class="modal-backdrop" id="video-modal" role="dialog" aria-modal="true" aria-labelledby="video-modal-title" hidden>
+    <div class="modal-container modal-lg">
+      <div class="modal-header">
+        <span class="modal-badge" id="video-modal-category">Travel</span>
+        <button type="button" class="modal-close-btn" data-close-modal="video-modal" aria-label="Close video player">&times;</button>
+      </div>
+      <div class="video-player-wrapper" id="video-player-container">
+        <!-- Populated dynamically with HTML5 video or iframe when opened -->
+      </div>
+      <div class="modal-body">
+        <div class="video-modal-meta">
+          <span id="video-modal-date"></span>
+          <span>&bull;</span>
+          <span id="video-modal-views"></span>
+          <span>&bull;</span>
+          <span id="video-modal-duration"></span>
+        </div>
+        <h3 class="modal-title" id="video-modal-title">Video Title</h3>
+        <p class="modal-text" id="video-modal-desc">Video description goes here.</p>
+        <div class="video-modal-disclaimer">
+          <strong>Sample Playback Note:</strong> This player demonstrates embedded video playback using royalty-free sample media. Replace the <code>videoUrl</code> or <code>youtubeId</code> in <code>script.js</code> with your own uploads.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Universal Content Modal (Blog Article Reader, Destination Guide, Creator Story, Legal Policies) -->
+  <div class="modal-backdrop" id="content-modal" role="dialog" aria-modal="true" aria-labelledby="content-modal-title" hidden>
+    <div class="modal-container modal-reading">
+      <div class="modal-header">
+        <span class="modal-badge" id="content-modal-badge">Article</span>
+        <button type="button" class="modal-close-btn" data-close-modal="content-modal" aria-label="Close dialog">&times;</button>
+      </div>
+      <div class="modal-body" id="content-modal-body">
+        <!-- Populated dynamically via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Photo Gallery Lightbox Modal -->
+  <div class="lightbox-backdrop" id="lightbox-modal" role="dialog" aria-modal="true" aria-label="Image Lightbox" hidden>
+    <div class="lightbox-topbar">
+      <span class="lightbox-counter" id="lightbox-counter">1 / 8</span>
+      <button type="button" class="lightbox-close-btn" id="lightbox-close" aria-label="Close lightbox">&times;</button>
+    </div>
+
+    <button type="button" class="lightbox-nav-btn lightbox-prev" id="lightbox-prev" aria-label="Previous photo">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </button>
+
+    <figure class="lightbox-figure">
+      <img src="" alt="" class="lightbox-image" id="lightbox-image">
+      <figcaption class="lightbox-caption">
+        <strong id="lightbox-title"></strong>
+        <span id="lightbox-location"></span>
+      </figcaption>
+    </figure>
+
+    <button type="button" class="lightbox-nav-btn lightbox-next" id="lightbox-next" aria-label="Next photo">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </button>
+  </div>
+
+  <!-- =====================================================================
+       TOAST NOTIFICATION CONTAINER
+       ===================================================================== -->
+  <div class="toast-container" id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
